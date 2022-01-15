@@ -8,8 +8,8 @@ function alertbox(){
     console.log(check.checked);
     if(validacao(nome,tele,email,check.checked)){
         alert("dados enviados");
-    }
-    alert("Por Favor preencha todos os campos");
+    }else{alert("Por Favor preencha todos os campos");}
+    
     
 }
 //validação campo preenchido
@@ -22,23 +22,16 @@ function validacao(a,b,c,d){
 //evento botao
 document.getElementById("btnEnviar").addEventListener("click",alertbox);
 
-$('#navMenu a, .scrollDown').click(function() {
-    $('html, body').animate({
-      scrollTop: $($(this).attr('href'))
-        .offset().top
-    }, 700);
-    return false;
-  });
-  
-  $(window).scroll(function() {
-    var x = $(".nav-top").offset().top;
-    $("section").each(function(index) {
-      var z = $(this).attr("id");
-      if (x > $(this).offset().top && x <= $(this).offset().top + $(this).height()) {
-        $('a.' + z).css("color", "red");
-      } else {
-        $('a.' + z).css("color", "gray")
-      }
-    })
+window.onload = function () {
+  scrollSpy('#navMenu', {
+    sectionClass: '.scrollspy',
+    menuActiveTarget: 'li > a',
+    offset: 1000,
+    // smooth scroll
+    smoothScroll: true,
+    smoothScrollBehavior: function(element) {
+      console.log('run "smoothScrollBehavior"...', element)
+      element.scrollIntoView({ behavior: 'smooth' }) // default behavior
+    }
   })
-  
+}
