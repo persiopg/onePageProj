@@ -10,8 +10,8 @@
     <body>
         <!-- menu -->
         <header>
-            <nav class="navbar navbar-expand-md navbar-dark fixed-top">
-                <a id="logo" class="navbar-brand" href="#"><img src="img/Logo Teste Dark.svg"></a>
+            <nav id="navMenu" class="navbar navbar-expand-md navbar-dark fixed-top">
+                <a id="logo" class="navbar-brand" href="#"><img src="img/logotiporavel.png"></a>
                 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                   <span class="navbar-toggler-icon"></span>
@@ -20,76 +20,68 @@
                 <div class="collapse navbar-collapse  justify-content-end" id="collapsibleNavbar">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#home">HOME</a>
+                            <a data-scroll="home" class="nav-link dot active" href="#home">HOME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">SOBRE</a>
+                            <a data-scroll="sobre" class="nav-link dot" href="#sobre">SOBRE</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">GALERIA</a>
+                            <a data-scroll="galeria" class="nav-link dot" href="#galeria">GALERIA</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">NOTÍCIA</a>
+                            <a data-scroll="noticia" class="nav-link dot" href="#noticia">NOTÍCIA</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">CONTATO</a>
+                            <a data-scroll="contato" class="nav-link dot" href="#contato">CONTATO</a>
                         </li>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><img src="https://img.icons8.com/ios/50/000000/instagram-new--v1.png"/></a>
+                            <a class="nav-link" href="#"><img src="https://img.icons8.com/ios-glyphs/30/ffffff/instagram-new.png"/></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><img src="https://img.icons8.com/ios/50/000000/facebook--v1.png"/></a>
+                            <a class="nav-link" href="#"><img src="https://img.icons8.com/ios-glyphs/30/ffffff/facebook-new.png"/></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><img src="https://img.icons8.com/ios/50/000000/linkedin.png"/></a>
+                            <a class="nav-link" href="#"><img src="https://img.icons8.com/ios-glyphs/30/ffffff/linkedin.png"/></a>
                         </li>
                     </ul>
                 </div>
               </nav>
-        </header>        
+        </header>            
         <!-- conteudo home-->
-        <div class="conteudo">
-                <div id="home" class="container">                
+        <div id="home" class="conteudo">
+                <div class="container">                
                     <div class="row">
 
-                        <div class="col-sm-8">
-                            <div class="conteudoDireita">
-                                <h2>test</h2>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Vestibulum varius viverra rhoncus. Orci varius natoque 
-                                penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-                                Donec fermentum sem non dapibus feugiat. Duis at velit lectus. Maecenas 
-                                aliquam venenatis convallis. Donec lacinia odio tellus, vitae ullamcorper 
-                                nibh pretium id. Mauris luctus massa quis tristique pellentesque. In 
-                                blandit feugiat nisi, sed convallis lectus dapibus sed.
-                                </p>
+                        <div class="col-lg-8">
+                            <div class="conteudoEsqueda">
+                                <h2>Estabilidade no Trabalho e Aumento de Produtividade, com gestão e segurança.</h2>
+                                <h1>Serviços de TI para empresas</h1>
+                                <p>Do suporte técnico a soluções em nuvem</p>
+                                
                             </div>                            
                         </div>
 
-                        <div class="col-sm-4 colposition">
+                        <div class="col-lg-4 colposition">
                             <div class="form-group">
-                                <div class="conteudoEsqueda">
-                                    <form action="">
+                                <div class="conteudoDireita">
+                                    <form id="formB">
                                         <div class="form-group">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                            Vestibulum varius viverra rhoncus. Orci varius natoque 
-                                            penatibus et magnis dis parturient montes, nascetur ridiculus mus</p>
-                                        <input type="text" class="form-control" placeholder="Nome'">
+                                        <p>fique por dentro de todas as novidades relacionadas a tecnologia e segurança da informação :</p>
+                                        <input type="text" id="fNome" class="form-control" placeholder="Nome'">
                                         </div>
                                         <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Telefone'">
+                                        <input type="text" id="fTele" class="form-control" placeholder="Telefone'">
                                         </div>
                                         <div class="form-group">
-                                            <input type="email" class="form-control" placeholder="Email'">
+                                            <input type="email" id="fEmail" class="form-control" placeholder="Email'">
                                         </div>
                                         <div class="form-group form-check">
                                         <label class="form-check-label">
-                                            <input class="form-check-input" type="checkbox"> Remember me
+                                            <input class="form-check-input" id="fChecbox" type="checkbox"> Ao informar meus dados, eu concordo com <b>Política de Privacidade</b> .
                                         </label>
                                         </div>
-                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                        <button id="btnEnviar" type="submit" class="btn btn-dark">enviar</button>
                                     </form>
                                 </div>
                             </div>
@@ -103,39 +95,35 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-6">
-                        <h2>saiba mais</h2> 
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Vestibulum varius viverra rhoncus. Orci varius natoque 
-                            penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-                            Donec fermentum sem non dapibus feugiat. Duis at velit lectus. Maecenas 
-                            aliquam venenatis convallis. Donec lacinia odio tellus, vitae ullamcorper 
-                            nibh pretium id. Mauris luctus massa quis tristique pellentesque. In 
-                            blandit feugiat nisi, sed convallis lectus dapibus sed.</p>
+                        <h2>Nosso compromisso é apresentar e aplicar
+                            recursos tecnológicos para agregar valor ao seu negócio</h2> 
                     </div>
-                    <div class="col-lg-6"><button class="btn btn-primary" type="button">saiba Mais</button></div>
+                    <div class="col-lg-6"><a class="btn btn-dark" href="#formB">QUERO SABER MAIS</a></div>
                 </div>
             </div>
         </div>
         <!--sobre a empressa-->
-        <div class="sobre">
+        <div id="sobre" class="sobre">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-6"><img src="./img/loremipsum.png"></div>
-                    <div class="col-6">
-                        <h2 style="font-size: 30; color: black; text-align: center;">Sobre a empresa</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Vestibulum varius viverra rhoncus. Orci varius natoque 
-                            penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-                            Donec fermentum sem non dapibus feugiat. Duis at velit lectus. Maecenas 
-                            aliquam venenatis convallis. Donec lacinia odio tellus, vitae ullamcorper 
-                            nibh pretium id. Mauris luctus massa quis tristique pellentesque. In 
-                            blandit feugiat nisi, sed convallis lectus dapibus sed.</p>
+                    <div class="col-lg-6"><img src="./img/equipe-ravel-IV.jpg"></div>
+                    <div class="col-lg-6">
+                        <h2 style="font-size: 30; color: black; text-align: center;">Ravel Tecnologia</h2>
+                        <p>Somos uma empresa de tecnologia que atende todas as verticais do mercado corporativo.
+                            Ofertamos serviços de TI para garantir que a tecnologia trabalhe como forte aliada na 
+                            conquista de resultados e se reflita de forma direta na produtividade e no crescimento 
+                            dos clientes de todas as áreas da indústria, comércio ou serviço.                                
+                            Com uma equipe formada por mais de 60 profissionais, com expertise de mais de 20 anos de atuação,
+                            somos uma empresa de tecnologia que se destaca ao estabelecer relacionamentos duradouros com nossos 
+                            clientes, parceiros e colaboradores.
+                            
+                            </p>
                     </div>
                 </div>
             </div>
         </div>
         <!--galeria-->
-        <div class="galeria">
+        <div id="galeria" class="galeria">
             <h2>Galeria</h2>
             <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Vestibulum varius viverra rhoncus. Orci varius natoque 
@@ -145,7 +133,12 @@
                     <div class="col-lg"><img src="./img/empresas1.jpg"></div>
                     <div class="col-lg"><img src="./img/empresas2.jpg"></div>
                     <div class="col-lg"><img src="./img/empresas3.jpg"></div>
-                </div><div class="row">
+                </div>
+                <div class="row">
+                    <div class="col-12">                           
+                    </div>
+                </div>
+                <div class="row">
                     <div class="col-lg"><img src="./img/empresas4.jpg"></div>
                     <div class="col-lg"><img src="./img/empresas5.jpg"></div>
                     <div class="col-lg"><img src="./img/empresas6.jpg"></div>
@@ -153,151 +146,171 @@
             </div>
         </div>
         <!--noticias-->
-        <div class="noticia">
+        <div id="noticia" class="noticia">
             <h2>Noticias</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Vestibulum varius viverra rhoncus. Orci varius natoque 
-                penatibus et magnis dis parturient montes, nascetur ridiculus mus</p>
+            
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="card">
                             <img class="card-img-top" src="./img/empresas1.jpg" alt="Card image">
                             <div class="card-body">
-                              <h4 class="card-title">John Doe</h4>
-                              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Vestibulum varius viverra rhoncus. Orci varius natoque 
-                                penatibus et magnis dis parturient montes, nascetur ridiculus mus</p>
-                              <a href="#" class="btn btn-dark">See Profile</a>
+                            <h4 class="card-title">GERENCIAMENTO DE PATCHES E SUA IMPORTÂNCIA</h4>
+                            <p class="card-text">Um olhar abrangente sobre segurança da informação
+                                    precisará abordar este importante assunto.</p>
+                            <a href="#" class="btn btn-dark">Leia mais</a>
                             </div>
-                          </div>
+                        </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="card">
                             <img class="card-img-top" src="./img/empresas2.jpg" alt="Card image">
                             <div class="card-body">
-                              <h4 class="card-title">John Doe</h4>
-                              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Vestibulum varius viverra rhoncus. Orci varius natoque 
-                                penatibus et magnis dis parturient montes, nascetur ridiculus mus</p>
-                              <a href="#" class="btn btn-dark">See Profile</a>
+                            <h4 class="card-title">A REALIDADE DO METAVERSO</h4>
+                            <p class="card-text">O Metaverso é uma realidade? Estamos diante de 
+                                uma mudança em nossa forma de viver? Bem, isso é bem possível. 
+                                Neste artigo, aprofundo o tema do Metaverso</p>
+                            <a href="#" class="btn btn-dark">Leia mais</a>
                             </div>
-                          </div>
+                        </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="card">
                             <img class="card-img-top" src="./img/empresas3.jpg" alt="Card image">
                             <div class="card-body">
-                                <h4 class="card-title">John Doe</h4>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Vestibulum varius viverra rhoncus. Orci varius natoque 
-                                    penatibus et magnis dis parturient montes, nascetur ridiculus mus</p>
-                                <a href="#" class="btn btn-dark">See Profile</a>
+                                <h4 class="card-title">VOCÊ NUNCA MAIS ESTARÁ SOZINHO</h4>
+                                <p class="card-text">Quando estamos sozinhos podemos criar monstros que simplesmente não existem.
+                                        Ter coragem de pedir ajuda pode ser o começo na busca por uma nova vida.</p>
+                                <a href="#" class="btn btn-dark">Leia mais</a>
                             </div>
                         </div>                        
                     </div>
                 </div>    
             </div>
         </div>
-
-        <!--footer contatos-->
-        <footer>
-            <div class="contato">
-                <div class="container">
-                    <div class="row">
-                        <!--Email-->
-                        <div class="col-6">
-                            <h2 style="font-size: 30; color: black; text-align: center;">Contato</h2>
-                            <p style="text-align: center; color: black;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Vestibulum varius viverra rhoncus. Orci varius natoque 
-                                penatibus et magnis dis parturient montes, nascetur ridiculus mus</p>
-                            <div class="form-group">
-                                <form>
-                                    <input type="text" class="form-control" id="nome" placeholder="Nome">
-                                    <div class="row">
-                                      <div class="col">
-                                        <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
-                                      </div>
-                                      <div class="col">
-                                        <input type="password" class="form-control" placeholder="Enter password" name="pswd">
-                                      </div>
-                                    </div>
-                                    <input type="text" class="form-control" id="assunto" placeholder="Assunto">
-                                    <textarea class="form-control" name="mensagem" id="mensagem" cols="70" rows="5" placeholder="Mensagem"></textarea>
-                                    <input type="button" class="btn btn-dark" value="Enviar">
-                                  </form>
-                            </div>
+        <!--contatos-->
+        <div id="contato" class="contato">
+            <div class="container">
+                <div class="row">
+                    <!--Email-->
+                    <div class="col-lg-6 canais">
+                        <h2>Contato</h2>
+                        <p>Este formulário enviará seus dados para a equipe comercial, para contato com a equipe técnica.</p>
+                        <div class="form-group">
+                            <form>
+                                <input type="text" class="form-control" id="nome" placeholder="Nome'" name="nome">
+                                <div class="row">
+                                <div class="col">
+                                    <input type="text" class="form-control" id="email" placeholder="Telefone" name="telefone">
+                                </div>
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="Email'" name="email">
+                                </div>
+                                </div>
+                                <input type="text" class="form-control" id="assunto" placeholder="Assunto'" name="assunto">
+                                <textarea class="form-control" name="mensagem" id="mensagem" cols="70" rows="5" placeholder="Mensagem'"></textarea>
+                                <input type="button" class="btn btn-dark" value="Enviar">
+                            </form>
                         </div>
-                        <!-- canais de comunicação-->
-                        <div class="col-6">
-                            <div class="container">
-                                <h2>outros canais</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Vestibulum varius viverra rhoncus. Orci varius natoque 
-                                    penatibus et magnis dis parturient montes, nascetur ridiculus mus</p>
+                    </div>
+                    <!-- canais de comunicação-->
+                    <div class="col-lg-6 canais ">
+                        <div class="container-fluid">
+                            <h2>Outros canais</h2>
+                            <p>Horário de Atendimento
+                                Seg a Sex. 8h às 17h30</p>
+                            <div class="canaisCont">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <img src="https://img.icons8.com/ios-filled/50/ffffff/apple-phone.png"/>
+                                        <p>(11) 4057-5740</p>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <img src="https://img.icons8.com/ios-filled/50/ffffff/map.png"/>
+                                        <p>Grande ABC - SP</p>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <img src="https://img.icons8.com/ios-filled/50/ffffff/mail.png"/>
+                                        <p>suporte@ravel.com.br</p>
+                                    </div>                                        
+                                </div>
                                 <div class="row">
                                     <div class="col">
-                                        telofone
-                                    </div>
-                                    <div class="col">
-                                        endereco
-                                    </div>
-                                    <div class="col">
-                                        email
+                                        <h2>Serviços</h2>
                                     </div>
                                 </div>
                             </div>
-                            <div id="accordion">
-                                <div class="card">
-                                  <div class="card-header">
+                        </div>
+                        
+                        <div id="accordion">
+                            <div class="card">
+                                <div class="card-header">
                                     <a class="card-link" data-toggle="collapse" href="#collapseOne">
-                                      Collapsible Group Item #1
+                                        <P>ATENDIMENTO REMOTO</P>
                                     </a>
-                                  </div>
-                                  <div id="collapseOne" class="collapse show" data-parent="#accordion">
-                                    <div class="card-body">
-                                      Lorem ipsum..
-                                    </div>
-                                  </div>
                                 </div>
-                              
-                                <div class="card">
-                                  <div class="card-header">
+                                <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p>Ideal para filiais e unidades de negócio distantes da Grande São Paulo. Conseguimos monitorar o ambiente e prestar o suporte para os usuários envolvidos.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="card">
+                                <div class="card-header">
                                     <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
-                                      Collapsible Group Item #2
+                                        <P>ATENDIMENTO PRESENCIAL</P>
                                     </a>
-                                  </div>
-                                  <div id="collapseTwo" class="collapse" data-parent="#accordion">
-                                    <div class="card-body">
-                                      Lorem ipsum..
-                                    </div>
-                                  </div>
                                 </div>
-                              
-                                <div class="card">
-                                  <div class="card-header">
+                                <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <P>Além do atendimento remoto, todas as demandas presenciais são atendidas, sempre que há necessidade.</P>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="card">
+                                <div class="card-header">
                                     <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
-                                      Collapsible Group Item #3
+                                        <p>ALOCAÇÃO TECNICA</p>
                                     </a>
-                                  </div>
-                                  <div id="collapseThree" class="collapse" data-parent="#accordion">
-                                    <div class="card-body">
-                                      Lorem ipsum..
-                                    </div>
-                                  </div>
                                 </div>
-                              
-                              </div>
+                                <div id="collapseThree" class="collapse" data-parent="#accordion">
+                                    <div class="card-body">
+                                    <p>Caso a estrutura tenha uma demanda que exija uma presença constante de um profissional,
+                                            uma programação fixa periódica pode ser implantada, podendo ser realizada com visitas mensais, 
+                                            semanais ou diárias.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <a class="collapsed card-link" data-toggle="collapse" href="#collapsefour">
+                                        <p>ALOCAÇÃO GESTOR</p>
+                                    </a>
+                                </div>
+                                <div id="collapsefour" class="collapse" data-parent="#accordion">
+                                    <div class="card-body">
+                                    <p>O gestor faz os alinhamentos entre o corpo técnico e a gerência da empresa,
+                                            buscando eficiência máxima na execução dos trabalhos e o melhor entendimento
+                                            das necessidades estratégicas da organização</p>
+                                    </div>
+                                </div>
+                            </div>                            
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <!--footer-->
+        <footer class="footer">
+            ©2022 - Ravel Tecnologia - Todos os direitos reservados - Desenvolvido por Persio
         </footer>
-
-
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    
+        <script src="./js/index.js"></script>
+        <script type="text/javascript" src="./Js/jquery-3.1.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     </body>
 </html>
