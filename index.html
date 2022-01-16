@@ -1,12 +1,16 @@
 <!doctype html>
-<html>
+<html lang="pt-br">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link href="http://logicbox.net/jquery/simplyscroll/jquery.simplyscroll.css" rel="stylesheet" />
-        <title>Hello, world!</title>
+        <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico">
+        <title>Ravel Tecnologia</title>
+        <meta name="description" content="A Ravel é uma empresa de tecnologia que oferece serviços de TI com o objetivo de garantir estabilidade e produtividade através de suporte técnico, prevenção e evolução">
+        <meta name="keyword" content="Empresa de Tecnologia">
+        <meta name="author" content="Persio de Paula Godoy">
     </head>
     <body>
         <!-- menu -->
@@ -53,22 +57,20 @@
         <div id="home" class="conteudo scrollspy">
             <div class="container">                
                 <div class="row">
-
                     <div class="col-lg-8">
                         <div class="conteudoEsqueda">
                             <h2>Estabilidade no Trabalho e Aumento de Produtividade, com gestão e segurança.</h2>
-                            <h1>Serviços de TI para empresas</h1>
-                            <p>Do suporte técnico a soluções em nuvem</p>
-                            
+                            <br>
+                            <h1><strong>SERVIÇOS DE TI PARA EMPRESAS</strong></h1>
+                            <p>Do suporte técnico a soluções em nuvem</p>                            
                         </div>                            
                     </div>
-
                     <div class="col-lg-4 colposition">
                         <div id="formbaner" class="form-group">
                             <div class="conteudoDireita">
                                 <form id="formB">
                                     <div class="form-group">
-                                    <p>fique por dentro de todas as novidades relacionadas a tecnologia e segurança da informação</p>
+                                    <p>Fique por dentro de todas as novidades relacionadas a tecnologia e segurança da informação</p>
                                     <input type="text" id="fNome" class="form-control" placeholder="Nome'">
                                     </div>
                                     <div class="form-group">
@@ -106,54 +108,101 @@
         <div id="sobre" class="sobre scrollspy">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-6"><img src="./img/equipe-ravel-IV.jpg"></div>
+                    <div class="col-lg-6"><img src="./img/equipe-ravel-IV.jpg" title="Equipe Ravel Tecnologia"></div>
                     <div class="col-lg-6">
                         <h2 style="font-size: 30; color: black; text-align: center;">Ravel Tecnologia</h2>
-                        <p>Somos uma empresa de tecnologia que atende todas as verticais do mercado corporativo.
+                        <p>
+                            Somos uma empresa de tecnologia que atende todas as verticais do mercado corporativo.
                             Ofertamos serviços de TI para garantir que a tecnologia trabalhe como forte aliada na 
                             conquista de resultados e se reflita de forma direta na produtividade e no crescimento 
                             dos clientes de todas as áreas da indústria, comércio ou serviço.                                
                             Com uma equipe formada por mais de 60 profissionais, com expertise de mais de 20 anos de atuação,
                             somos uma empresa de tecnologia que se destaca ao estabelecer relacionamentos duradouros com nossos 
-                            clientes, parceiros e colaboradores.
-                            
-                            </p>
+                            clientes, parceiros e colaboradores.                            
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
         <!--galeria-->
         <div id="galeria" class="galeria scrollspy">
-            <h2>Galeria</h2>
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Vestibulum varius viverra rhoncus. Orci varius natoque 
-                penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            <h2>Galeria</h2>            
             <div class="container">
                 <div class="row">
-                    <div class="col-lg"><img src="./img/empresas1.jpg"></div>
-                    <div class="col-lg"><img src="./img/empresas2.jpg"></div>
-                    <div class="col-lg"><img src="./img/empresas3.jpg"></div>
+                    <div class="col-lg"><a href="#img1"><img src="./img/galeria/empresas1.jpg" class="min"></a></div>
+                    <div class="col-lg"><a href="#img2"><img src="./img/galeria/empresas2.jpg" class="min"></a></div>
+                    <div class="col-lg"><a href="#img3"><img src="./img/galeria/empresas3.jpg" class="min"></a></div>
                 </div>
                 <div class="row">
                     <div class="col-12">                           
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg"><img src="./img/empresas4.jpg"></div>
-                    <div class="col-lg"><img src="./img/empresas5.jpg"></div>
-                    <div class="col-lg"><img src="./img/empresas6.jpg"></div>
+                    <div class="col-lg"><a href="#img4"><img src="./img/galeria/empresas4.jpg" class="min"></a></div>
+                    <div class="col-lg"><a href="#img5"><img src="./img/galeria/empresas5.jpg" class="min"></a></div>
+                    <div class="col-lg"><a href="#img6"><img src="./img/galeria/empresas6.jpg" class="min"></a></div>
+                </div>
+            </div>
+        </div>
+        <!--light box-->
+        <div>
+            <div class="lBox" id="img1">
+                <div class="boxImg">
+                    <a href="#img6" class="btnl" id="prev">&#171;</a>
+                    <a href="#galeria" class="btnl" id="close">X</a>
+                    <img style="height:80vh; width:100%;" src="./img/galeria/empresas1.jpg" >
+                    <a href="#img2" class="btnl" id="next">&#187;</a>
+                </div>
+            </div>
+            <div class="lBox" id="img2">
+                <div class="boxImg">
+                    <a href="#img1" class="btnl" id="prev">&#171;</a>
+                    <a href="#galeria" class="btnl" id="close">X</a>
+                    <img style="height:80vh; width:100%;" src="./img/galeria/empresas2.jpg" >
+                    <a href="#img3" class="btnl" id="next">&#187;</a>
+                </div>
+            </div>
+            <div class="lBox" id="img3">
+                <div class="boxImg">
+                    <a href="#img2" class="btnl" id="prev">&#171;</a>
+                    <a href="#galeria" class="btnl" id="close">X</a>
+                    <img style="height:80vh; width:100%;" src="./img/galeria/empresas3.jpg" >
+                    <a href="#img4" class="btnl" id="next">&#187;</a>
+                </div>
+            </div>
+            <div class="lBox" id="img4">
+                <div class="boxImg">
+                    <a href="#img3" class="btnl" id="prev">&#171;</a>
+                    <a href="#galeria" class="btnl" id="close">X</a>
+                    <img style="height:80vh; width:100%;" src="./img/galeria/empresas4.jpg" >
+                    <a href="#img5" class="btnl" id="next">&#187;</a>
+                </div>
+            </div>
+            <div class="lBox" id="img5">
+                <div class="boxImg">
+                    <a href="#img4" class="btnl" id="prev">&#171;</a>
+                    <a href="#galeria" class="btnl" id="close">X</a>
+                    <img style="height:80vh; width:100%;" src="./img/galeria/empresas5.jpg" >
+                    <a href="#img6" class="btnl" id="next">&#187;</a>
+                </div>
+            </div>
+            <div class="lBox" id="img6">
+                <div class="boxImg">
+                    <a href="#img5" class="btnl" id="prev">&#171;</a>
+                    <a href="#galeria" class="btnl" id="close">X</a>
+                    <img  style="height:80vh; width:100%;"src="./img/galeria/empresas6.jpg">
+                    <a href="#img1" class="btnl" id="next">&#187;</a>
                 </div>
             </div>
         </div>
         <!--noticias-->
         <div id="noticia" class="noticia scrollspy">
-            <h2>Noticias</h2>
-            
+            <h2>Noticias</h2>            
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="card">
-                            <img class="card-img-top" src="./img/empresas1.jpg" alt="Card image">
+                            <img class="card-img-top" src="./img/noticia/notEmpresas1.jpg" title="GERENCIAMENTO DE PATCHES E SUA IMPORTÂNCIA" alt="Card image">
                             <div class="card-body">
                             <h4 class="card-title">GERENCIAMENTO DE PATCHES E SUA IMPORTÂNCIA</h4>
                             <p class="card-text">Um olhar abrangente sobre segurança da informação
@@ -164,7 +213,7 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="card">
-                            <img class="card-img-top" src="./img/empresas2.jpg" alt="Card image">
+                            <img class="card-img-top" src="./img/noticia/notEmpresas2.jpg" title="A REALIDADE DO METAVERSO" alt="Card image">
                             <div class="card-body">
                             <h4 class="card-title">A REALIDADE DO METAVERSO</h4>
                             <p class="card-text">O Metaverso é uma realidade? Estamos diante de 
@@ -176,7 +225,7 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="card">
-                            <img class="card-img-top" src="./img/empresas3.jpg" alt="Card image">
+                            <img class="card-img-top" src="./img/noticia/notEmpresas3.jpg" title="VOCÊ NUNCA MAIS ESTARÁ SOZINHO" alt="Card image">
                             <div class="card-body">
                                 <h4 class="card-title">VOCÊ NUNCA MAIS ESTARÁ SOZINHO</h4>
                                 <p class="card-text">Quando estamos sozinhos podemos criar monstros que simplesmente não existem.
@@ -197,19 +246,19 @@
                         <h2>Contato</h2>
                         <p>Este formulário enviará seus dados para a equipe comercial, para contato com a equipe técnica.</p>
                         <div class="form-group">
-                            <form>
+                            <form id="formCont">
                                 <input type="text" class="form-control" id="nome" placeholder="Nome'" name="nome">
                                 <div class="row">
                                 <div class="col">
-                                    <input type="text" class="form-control" id="email" placeholder="Telefone" name="telefone">
+                                    <input type="text" class="form-control" id="tele" placeholder="Telefone" name="telefone">
                                 </div>
                                 <div class="col">
-                                    <input type="text" class="form-control" placeholder="Email'" name="email">
+                                    <input type="text" class="form-control" id="email" placeholder="Email'" name="email">
                                 </div>
                                 </div>
                                 <input type="text" class="form-control" id="assunto" placeholder="Assunto'" name="assunto">
                                 <textarea class="form-control" name="mensagem" id="mensagem" cols="70" rows="5" placeholder="Mensagem'"></textarea>
-                                <input type="button" class="btn btn-dark" value="Enviar">
+                                <input type="button" class="btn btn-dark" value="Enviar" id="btnEnviarCont">
                             </form>
                         </div>
                     </div>
@@ -240,8 +289,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        
+                        </div>                        
                         <div id="accordion">
                             <div class="card">
                                 <div class="card-header">
@@ -254,8 +302,7 @@
                                         <p>Ideal para filiais e unidades de negócio distantes da Grande São Paulo. Conseguimos monitorar o ambiente e prestar o suporte para os usuários envolvidos.</p>
                                     </div>
                                 </div>
-                            </div>
-                        
+                            </div>                        
                             <div class="card">
                                 <div class="card-header">
                                     <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
@@ -267,8 +314,7 @@
                                         <P>Além do atendimento remoto, todas as demandas presenciais são atendidas, sempre que há necessidade.</P>
                                     </div>
                                 </div>
-                            </div>
-                        
+                            </div>                        
                             <div class="card">
                                 <div class="card-header">
                                     <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
